@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+header{
+    height: 80px;
+}
+header h1{
+    display: inline-block;
+    padding: 16px 24px;
+    text-transform: uppercase;
+}
+header h1 a:hover{
+    color:  #ff5733;
+}
+header ul{
+    float: right;
+}
+header ul li{
+    padding: 25px;
+    display: inline-block;
+}
+header ul li a:hover{
+    color:  #ff5733;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    margin: 0 auto;
+    width: 95%;
+}
+.container::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.mobile-menu{
+    float: right;
+    display: none;
+    padding: 40px;
+}
+.mobile-menu:hover{
+    cursor: pointer;
+}
+#check{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: -300px;
+    width: 300px;
+    background-color: rgba( 255, 87, 51, .9 );
+}
+.sidebar ul li a{
+    color: #fff;
+}
+.sidebar ul li{
+    padding: 24px;
+}
+.sidebar ul li:hover{
+    background-color: black;
+}
+#check:checked ~ .sidebar{
+    left: 0;
+}
+.banner{
+    background-color: #ff5733;
+    padding: 200px 0;
+}
+section{
+    padding: 50px 0;
+}
+.banner h2{
+    margin-bottom: 10px;
+}
+.banner p{
+    font-size: 18px;
+}
+.banner h2, .banner p, .banner span{
+    color: #fff;
+}
+.banner-left{
+    padding-left: 24px;
+}
+section h3{
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+}
+#about{
+    padding: 200px 0;
+}
+#about p{
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.col-4{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 5px;
+    float: left;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.col-4 img{
+    width: 100%;
+}
+.col-4 a:hover img{
+    transform: scale(1.2);
+}
+#menu{
+    background-color: #ff5733;
+}
+.col-3{
+    width: 25%;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    padding: 50px 10px;
+}
+.col-3 h4{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(78, 73, 73);
+    margin-bottom: 15px;
+}
+footer{
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+}
+footer small{
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+@media(max-width: 800px){
+    .mobile-menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+    .col-4{
+        width: 50%;
+    }
+}
